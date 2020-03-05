@@ -1,0 +1,15 @@
+10System:    10Host jurien-monoz 10Kernel 5.4.22-1-MANJARO x86_64 10bits 64 10Desktop i3 4.18 
+           10Distro Manjaro Linux 
+10Machine:   10Type Convertible 10System HP 10product HP Spectre x360 Convertible 15-df0xxx 10v N/A 
+           10serial <filter> 
+           10Mobo HP 10model 8518 10v 10.66 10serial <filter> 10UEFI AMI 10v F.31 10date 06/28/2019 
+10Battery:   10ID-1 BAT0 10charge 82.0 Wh 10condition 82.0/82.0 Wh (100%) 
+10CPU:       10Quad Core Intel Core i7-8565U 10type MT MCP 10speed 800 MHz 10min/max 400/4600 MHz 
+10Graphics:  10Device-1 Intel UHD Graphics 620 10driver i915 10v kernel 
+           10Device-2 NVIDIA GP108M [GeForce MX150] 10driver nvidia 10v 440.59 
+           10Display x11 10server X.Org 1.20.7 10driver intel 10resolution 3840x2160~60Hz 
+           10OpenGL 10renderer Mesa DRI Intel UHD Graphics (Whiskey Lake 3x8 GT2) 10v 4.6 Mesa 19.3.4 
+10Network:   10Device-1 Intel Cannon Point-LP CNVi [Wireless-AC] 10driver iwlwifi 
+10Drives:    10Local Storage 10total 238.47 GiB 10used 35.74 GiB (15.0%) 
+10Info:      10Processes 233 10Uptime 11m 10Memory 15.30 GiB 10used 1.81 GiB (11.8%) 10Client shell wrapper 
+           10inxi 3.0.37 

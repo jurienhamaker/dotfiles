@@ -1,0 +1,11 @@
+alias zshrc="source ~/.zshrc"
+alias p="cd /mnt/Programming"
+alias m="p; cd Monoz"
+
+alias m_consumer="m; cd consumer; docker-compose up consumer"
+alias m_office="m; cd consumer; docker-compose up office"
+alias m_furniture="m; cd furniture-maker; docker-compose up"
+alias m_db="m; cd api; docker-compose up -d db"
+alias m_api="m; cd api; docker-compose up api"
+
+alias rl="~/RuneLite.appimage"

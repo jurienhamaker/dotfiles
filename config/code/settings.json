@@ -1,0 +1,8 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": true,
+    "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "workbench.colorTheme": "Material Theme Darker"
+}

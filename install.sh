@@ -34,8 +34,9 @@ rm -rf ~/.wallpaper.png
 ln -sf $CURRENTDIR/config/.wallpaper.png ~/
 
 echo "Linking screenlayout"
-rm -rf ~/.screenlayout
-ln -sf $CURRENTDIR/config/.screenlayout ~/
+rm -rf ~/.screenlayout.sh
+ln -sf $CURRENTDIR/config/.screenlayout.sh ~/
+echo "~/.screenlayout.sh" >> ~/.profile
 
 echo "Installing oh-my-zsh"
 rm -rf ~/.oh-my-zsh

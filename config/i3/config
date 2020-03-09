@@ -163,7 +163,7 @@ for_window [class="GitKraken"] move to workspace $ws5
 assign [class="Franz"] $ws4
 exec --no-startup-id franz
 assign [class="discord"] $ws4
-exec --no-startup-id discord-canary
+exec --no-startup-id discord
 for_window [class="discord"] move to workspace $ws4
 assign [class="Spotify"] $ws7
 for_window [class="Spotify"] move to workspace $ws7

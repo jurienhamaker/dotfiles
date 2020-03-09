@@ -173,6 +173,7 @@ format-underline = #D92B54
 
 label = %date% %time%
 
+
 [module/pulseaudio]
 type = internal/pulseaudio
 

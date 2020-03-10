@@ -4,5 +4,6 @@
     "workbench.activityBar.visible": true,
     "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
     "workbench.iconTheme": "eq-material-theme-icons-darker",
-    "workbench.colorTheme": "Material Theme Darker"
+    "workbench.colorTheme": "Material Theme Darker",
+    "editor.formatOnSave": true
 }

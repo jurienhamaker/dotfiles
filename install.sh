@@ -39,7 +39,9 @@ ln -sf $CURRENTDIR/config/.wallpaper.png ~/
 
 echo "Linking screenlayout"
 rm -rf ~/.screenlayout.sh
-ln -sf $CURRENTDIR/config/.screenlayout.sh ~/
+sudo rm -rf /etc/udev/rules.d/screenlayout.rules
+ln -sf $CURRENTDIR/config/screenlayout/.screenlayout.sh ~/
+sudo ln -sf $CURRENTDIR/config/screenlayout/screenlayout.rules /etc/udev/rules.d/
 echo "~/.screenlayout.sh" >> ~/.profile
 
 echo "Installing oh-my-zsh"

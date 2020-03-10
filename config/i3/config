@@ -246,3 +246,8 @@ exec_always --no-startup-id compton --config $HOME/.config/compton/compton.conf
 # Flash Focus
 exec_always --no-startup-id flashfocus
 bindsym $super+n exec --no-startup-id flash_window
+
+
+# Screenshotting
+bindsym Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
+bindsym Shift+Print --release exec scrot -s ~/Pictures/Screenshot/screenshot-$(date +%F_%T).png

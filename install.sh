@@ -22,6 +22,10 @@ echo "Linking Polybar"
 rm -rf ~/.config/polybar
 ln -sf $CURRENTDIR/config/polybar ~/.config/
 
+echo "Linking Flashfocus"
+rm -rf ~/.config/flashfocus
+ln -sf $CURRENTDIR/config/flashfocus ~/.config/
+
 echo "Linking Konsole"
 rm -rf ~/.local/share/konsole
 ln -sf $CURRENTDIR/config/konsole ~/.local/share/

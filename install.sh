@@ -18,6 +18,10 @@ echo "Linking i3"
 rm -rf ~/.config/i3
 ln -sf $CURRENTDIR/config/i3 ~/.config/
 
+echo "Linking rofi"
+rm -rf ~/.config/rofi
+ln -sf $CURRENTDIR/config/rofi ~/.config/
+
 echo "Linking Polybar"
 rm -rf ~/.config/polybar
 ln -sf $CURRENTDIR/config/polybar ~/.config/
@@ -36,6 +40,7 @@ ln -sf $CURRENTDIR/config/code/settings.json ~/.config/Code\ -\ OSS/User/
 echo "Linking wallpaper"
 rm -rf ~/.wallpaper.png
 ln -sf $CURRENTDIR/config/.wallpaper.png ~/
+betterlockscreen -u ~/.wallpaper
 
 echo "Linking screenlayout"
 rm -rf ~/.screenlayout.sh

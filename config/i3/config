@@ -32,11 +32,14 @@ bindsym $super+Return exec --no-startup-id konsole --hide-menubar --profile=defa
 # kill focused window
 bindsym $super+Shift+q kill
 
+# power menu
+bindsym $super+x exec ~/.config/rofi/bin/powermenu 
+
 # start dmenu (a program launcher)
 # bindsym $super+d exec dmenu_run
 # bindsym $super+d exec --no-startup-id rofi -show run
-bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=8'"
-bindsym $super+d exec rofi -Dlines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'Noto Sans 8'
+# bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=8'"
+bindsym $super+d exec ~/.config/rofi/bin/launcher
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.

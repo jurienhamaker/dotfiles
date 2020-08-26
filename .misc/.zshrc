@@ -26,3 +26,5 @@ antibody bundle < ~/.config/antibody/zsh_plugins.txt
 source ~/.aliases
 
 [[ ! -f ~/.config/antibody/p10k.zsh ]] || source ~/.config/antibody/p10k.zsh 
+
+neofetch

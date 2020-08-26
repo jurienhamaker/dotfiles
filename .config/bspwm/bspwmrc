@@ -56,3 +56,9 @@ bspc subscribe monitor | while read -r line; do
 					killall bspc && sleep 1 && bspc wm -r
 	esac
 done &
+
+startup_lock_file=/tmp/bspwm-startup.lock
+if [ ! -f $startup_lock_file ]; then
+  touch $startup_lock_file
+  ~/.config/autostart.sh &
+fi

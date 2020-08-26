@@ -1,4 +1,4 @@
-chrome &
+/opt/google/chrome/google-chrome &
 code &
 mailspring &
 discord &

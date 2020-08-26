@@ -2,9 +2,12 @@ alias zshrc="source ~/.zshrc"
 alias p="cd /mnt/Programming"
 
 alias e_ng1="p; cd employes-app; docker-compose up"
+alias e_ng1_bash="p; cd employes-app; docker-compose exec app bash"
 alias e_ng="p; cd employes; docker-compose up app"
-alias e_ng_st="p; cd employes; docker-compose up storybook"
+alias e_ng_bash="p; cd employes; docker-compose exec app bash"
 alias e_react="p; cd employes-react; docker-compose up"
+alias e_react_bash="p; cd employes-react; docker-compose exec app bash"
 alias e_style="p; cd employes-style; docker-compose up"
+alias e_style_bash="p; cd employes-style; docker-compose exec style bash"
 
 alias rl="~/RuneLite.appimage"

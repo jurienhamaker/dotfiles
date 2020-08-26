@@ -44,8 +44,9 @@ module-margin-left = 4
 module-margin-right = 2
 
 modules-left = i3
-modules-center = player-mpris-tail
-modules-right = pulseaudio memory cpu battery network date powermenu
+;modules-center = player-mpris-tail
+modules-center = date
+modules-right = pulseaudio memory cpu battery network powermenu
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -163,13 +164,13 @@ ramp-signal-5 = " "
 type = internal/date
 interval = 5
 
-date =
+date = "%Y-%m-%d "
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = " "
+;format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #D92B54
 

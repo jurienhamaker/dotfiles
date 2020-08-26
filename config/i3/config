@@ -27,7 +27,7 @@ set $super Mod4
 floating_modifier $super
 
 # start a terminal
-bindsym $super+Return exec --no-startup-id konsole --hide-menubar --profile=default
+bindsym $super+Return exec --no-startup-id konsole --hide-menubar --profile=Custom
 
 # kill focused window
 bindsym $super+Shift+q kill
@@ -241,7 +241,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-scale $HOME/.wallpaper.png
+exec_always --no-startup-id feh --bg-scale $HOME/wallpaper.jpg
 
 # Transparency
 exec_always --no-startup-id compton --config $HOME/.config/compton/compton.conf

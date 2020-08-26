@@ -2,18 +2,19 @@
 
 This repository contains my personal dotfiles. 
 
-[You can find the wallpaper here](https://github.com/jurienhamaker/dotfiles/blob/master/config/.wallpaper.png?raw=true)
+[You can find the wallpaper here](https://github.com/jurienhamaker/dotfiles/blob/bspwm/.misc/wallpaper.jpg?raw=true)
 
 #### Setup
 
-* i3-gaps
-* Polybar
-* Konsole
-* Rofi
-* zsh & Oh-my-zsh
-* Compton & Flashfocus
-* Roboto mono nerd fonts
+Here is a collection of my personal dotfiles, which include:
 
-#### Screenshot
-
-![Screenshot of setup](./screenshot.png)
+* BSPWM and SXHKD configuration and keybindings
+* Polybar configuration and scripts
+* A custom .Xresources color palette
+* Four GTK theme variants based on the theme color scheme (made with oomox)
+* rofi custom menus and configurations
+* termite color scheme and configuration
+* zsh configuration and custom color scheme based on powerlevel10k
+* dunst notifications
+* picom configuration
+* Custom themes for different applications (Spotify, Discord, Telegram Desktop...)

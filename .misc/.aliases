@@ -1,4 +1,5 @@
 alias zshrc="source ~/.zshrc"
+alias polybar="~/.config/polybar/launch.sh"
 alias p="cd /mnt/Programming"
 
 alias e_ng1="p; cd employes-app; docker-compose up"
@@ -11,3 +12,7 @@ alias e_style="p; cd employes-style; docker-compose up"
 alias e_style_bash="p; cd employes-style; docker-compose exec style bash"
 
 alias rl="~/RuneLite.appimage"
+
+
+alias lock="betterlockscreen -l dim"
+alias logout="rm -rf /tmp/bspwm-startup.lock; bspc quit"

@@ -9,7 +9,7 @@ xsetroot -cursor_name left_ptr & # X cursor fix
 dunst & # Notifications
 feh --bg-fill ~/Pictures/Wallpapers/wallpaper.jpg & # Wallpaper
 sxhkd & # Keyboard shortcuts
-xss-lock -- betterlockscreen -l & # Lockscreen handler
+xss-lock -- betterlockscreen -l dim & # Lockscreen handler
 
 chrome=Chrome
 code=Code
@@ -23,8 +23,8 @@ other2=9
 other3=10
 
 if [ "$(bspc query -M | wc -l)" -eq "2" ]; then
-	bspc monitor eDP1 -d $chat $mail
-	bspc monitor $( bspc query -M --names | grep -v eDP1) -d $chrome $code $terminal $git $spotify $other1 $other2 $other3
+	bspc monitor eDP-1-1 -d $chat $mail
+	bspc monitor $( bspc query -M --names | grep -v eDP-1-1) -d $chrome $code $terminal $git $spotify $other1 $other2 $other3
 else
 	bspc monitor -d $chrome $code $terminal $chat $git $mail $spotify $other1 $other2 $other3
 fi

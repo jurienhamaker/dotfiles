@@ -27,8 +27,8 @@ primary = ${xrdb:color9}
 secondary = #0000ff
 alert = #ffff00
 
-[bar/eDP1]
-monitor = eDP1
+[bar/eDP-1-1]
+monitor = eDP-1-1
 width = 100%
 height = 52
 ;offset-x = 1%
@@ -84,12 +84,20 @@ cursor-scroll = ns-resize
 enable-ipc = true
 
 [bar/HDMI2]
-inherit = bar/DP1
+inherit = bar/eDP-1-1
 monitor = HDMI2
 
-[bar/DP1]
-inherit = bar/eDP1
-monitor = DP1
+[bar/HDMI1]
+inherit = bar/eDP-1-1
+monitor = HDMI1
+
+[bar/DP-1-1]
+inherit = bar/eDP-1-1
+monitor = DP-1-1
+
+[bar/DP-1-2]
+inherit = bar/eDP-1-1
+monitor = DP-1-2
 
 
 [module/bspwm]
@@ -685,6 +693,8 @@ menu-0-3 = "%{F#ff217c}%{F-}"
 menu-0-3-exec = shutdown now
 menu-0-4 = "%{F#ff217c}%{F-}"
 menu-0-4-exec = loginctl lock-session 
+menu-0-5 ="%{F#ff217c}%{F-}"
+menu-0-5-exec = logout
 
 
 

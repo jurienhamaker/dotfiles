@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # Fix for autorandr profile switching at boot
 autorandr -c $(autorandr | grep "(detected)" | sed "s/ (detected)//")
@@ -22,12 +22,23 @@ other1=8
 other2=9
 other3=10
 
-if [ "$(bspc query -M | wc -l)" -eq "2" ]; then
-	bspc monitor eDP-1-1 -d $chat $mail
-	bspc monitor $( bspc query -M --names | grep -v eDP-1-1) -d $chrome $code $terminal $git $spotify $other1 $other2 $other3
-else
-	bspc monitor -d $chrome $code $terminal $chat $git $mail $spotify $other1 $other2 $other3
-fi
+COUNT=$(bspc query -M | wc -l);
+CONNECTED=$(xrandr | grep " connected " | awk '{ print$1 }');
+INDEX=0
+for MONITOR in $CONNECTED
+do
+	if [ $COUNT -eq "2" ]; then
+		if [ $INDEX -eq 0 ]; then
+			bspc monitor $( bspc query -M --names | grep -v $MONITOR ) -d $chrome $code $terminal $git $spotify $other1 $other2 $other3
+		else
+			bspc monitor $( bspc query -M --names | grep -v $MONITOR ) -d $chat $mail
+		fi
+	else
+		bspc monitor -d $chrome $code $terminal $chat $git $mail $spotify $other1 $other2 $other3
+	fi
+	INDEX=$(( INDEX + 1 ))
+done
+
  
 bspc config border_width         0
 bspc config window_gap           16

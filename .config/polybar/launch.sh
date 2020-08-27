@@ -10,7 +10,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 for screen in $(bspc query -M --names)
 do
     echo "start polybar at $screen"
-    polybar $screen &
+    BAR_TARGET=$screen polybar default &
 done
 
 echo "Polybar launched..."

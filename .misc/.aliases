@@ -16,3 +16,6 @@ alias rl="~/RuneLite.appimage"
 
 alias lock="betterlockscreen -l dim"
 alias logout="rm -rf /tmp/bspwm-startup.lock; bspc quit"
+
+
+alias screenshot="scrot -s /tmp/ss.png && xclip -selection clipboard -t image/png -i /tmp/ss.png && rm /tmp/ss.png"

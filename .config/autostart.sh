@@ -1,5 +1,5 @@
 /opt/google/chrome/google-chrome &
 code &
 mailspring &
-discord &
+discord-canary &
 franz &

@@ -8,7 +8,7 @@
     dark: #2c2541;
     // Black
     black:       #3d335c;
-    lightblack:  #2c2541;
+    lightblack:  #1E1F1F;
     //
     // Red
     red:         #cd5c5c;
@@ -85,7 +85,8 @@
 }
 
 #element selected  normal {
-    background-color: #da0f7a;
+    background-color: #61988E;
+    padding: 16px 16px 16px 16px;
 }
 #element normal active {
     text-color: @lightblue;

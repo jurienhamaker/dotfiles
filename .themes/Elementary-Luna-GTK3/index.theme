@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Elementary-Luna
+Type=X-GNOME-Metatheme
+Comment=Elementary-Luna
+Encoding=UTF-8
+GtkTheme=Elementary-Luna
+MetacityTheme=Elementary-Luna
+IconTheme=gnome
+CursorTheme=Adwaita
+CursorSize=24

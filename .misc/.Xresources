@@ -8,7 +8,7 @@ Xft.dpi:		152
 
 ! special
 *.foreground:   #f4f2f0
-*.background:   #2c2541
+*.background:   #1E1F1F
 *.cursorColor:  #f4f2f0
 
 ! black

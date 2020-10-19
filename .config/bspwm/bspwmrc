@@ -39,8 +39,12 @@ do
 	INDEX=$(( INDEX + 1 ))
 done
 
- 
-bspc config border_width         0
+
+#borders 
+bspc config border_width         3
+bspc config normal_border_color	 '#444545'
+bspc config focused_border_color '#61988E'
+
 bspc config window_gap           16
 
 bspc config split_ratio          0.5

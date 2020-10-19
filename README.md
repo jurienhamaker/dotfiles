@@ -6,7 +6,7 @@ This repository contains my personal dotfiles.
 
 #### Setup
 
-Here is a collection of my personal dotfiles, which include, this is based on ![Kurolox/dotfiles](https://github.com/Kurolox/dotfiles)
+Here is a collection of my personal dotfiles, which include, this is based on [Kurolox/dotfiles](https://github.com/Kurolox/dotfiles)
 
 -   BSPWM and SXHKD configuration and keybindings
 -   Polybar configuration and scripts

@@ -162,4 +162,4 @@ XF86MonBrightnessDown
 
 # Take a screenshot
 Print
-	scrot -s /tmp/ss.png && xclip -selection clipboard -t image/png -i /tmp/ss.png && rm /tmp/ss.png
+	imgur-screenshot

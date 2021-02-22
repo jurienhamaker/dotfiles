@@ -24,5 +24,6 @@ compinit
 antibody bundle < ~/.config/antibody/zsh_plugins.txt
 
 source ~/.aliases
+source ~/.env
 
 [[ ! -f ~/.config/antibody/p10k.zsh ]] || source ~/.config/antibody/p10k.zsh 

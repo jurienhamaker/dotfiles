@@ -39,6 +39,6 @@ element {
 }
 
 element selected {
-  background-color: #61988E;
-  text-color: #1E1F1F;
+  background-color: #C70039;
+  text-color: white;
 }

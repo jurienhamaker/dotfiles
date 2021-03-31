@@ -85,7 +85,7 @@
 }
 
 #element selected  normal {
-    background-color: #61988E;
+    background-color: #C70039;
     padding: 16px 16px 16px 16px;
 }
 #element normal active {
@@ -104,7 +104,7 @@
 }
 #element selected active {
     background-color: @lightblue;
-    text-color: @dark;
+    text-color: #fff;
 }
 #element selected urgent {
     background-color: @lightred;

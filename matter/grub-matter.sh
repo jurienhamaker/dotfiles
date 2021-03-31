@@ -1,1 +1,1 @@
-$PWD/matter.py -i arch arch -hl 61988E -bg 1E1F1F -fg white -ic white -ff /usr/share/fonts/TTF/Roboto-Regular.ttf -fn Roboto Regular -fs 24
+$PWD/matter.py -i arch arch -hl C70039 -bg 1E1F1F -fg white -ic white -ff /usr/share/fonts/TTF/Roboto-Regular.ttf -fn Roboto Regular -fs 24

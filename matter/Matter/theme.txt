@@ -27,7 +27,7 @@ terminal-border: "0"
   height = 60%
   item_font = "Roboto Regular 24"
   item_color = "#ffffff"
-  selected_item_color = "#61988E"
+  selected_item_color = "#C70039"
   icon_width = 72
   icon_height = 72
   item_height = 72

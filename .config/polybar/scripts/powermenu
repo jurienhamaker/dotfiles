@@ -3,10 +3,9 @@
 ## Created By Aditya Shakya
 
 #MENU="$(rofi -sep "|" -dmenu -i -p 'System' -location 5 -xoffset -14 -yoffset -52 -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 4 <<< " Lock| Logout| Reboot| Shutdown")"
-MENU="$(rofi -sep "|" -dmenu -i -p 'System' -location 3 -xoffset -16 -yoffset 88 -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 4 <<< " Lock| Logout| Reboot| Shutdown")"
+MENU="$(rofi -sep "|" -dmenu -i -p 'System' -location 3 -xoffset -16 -yoffset 88 -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 3 <<< " Lock| Reboot| Shutdown")"
             case "$MENU" in
                 *Lock) loginctl lock-session ;;
-                *Logout) bspc quit --exit;;
                 *Reboot) systemctl reboot ;;
                 *Shutdown) systemctl -i poweroff
             esac

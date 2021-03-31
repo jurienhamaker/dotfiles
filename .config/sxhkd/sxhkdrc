@@ -163,3 +163,6 @@ XF86MonBrightnessDown
 # Take a screenshot
 Print
 	imgur-screenshot
+
+shift + Print
+	imgur-screenshot -f

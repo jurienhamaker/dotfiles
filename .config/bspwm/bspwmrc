@@ -11,6 +11,9 @@ feh --bg-fill ~/Pictures/Wallpapers/wallpaper.jpg & # Wallpaper
 sxhkd & # Keyboard shortcuts
 xss-lock -- betterlockscreen -l dim & # Lockscreen handler
 
+# java fix?
+wmname LG3D
+
 chrome=Chrome
 code=Code
 terminal=Terminal

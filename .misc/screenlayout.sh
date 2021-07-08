@@ -1,10 +1,13 @@
 #!/bin/bash
 
-xrandr --dpi 152
-xrandr --auto
+#xrandr --dpi 152
+#xrandr --auto
 
 #Nvidia settings
-#xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+
+xrandr --dpi 152
+xrandr --auto 
 
 # $MONITOR & $LAPTOP are found in /etc/environment
 

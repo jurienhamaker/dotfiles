@@ -3,6 +3,10 @@
 # Fix for autorandr profile switching at boot
 autorandr -c $(autorandr | grep "(detected)" | sed "s/ (detected)//")
 
+# Nvidia
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
 picom --experimental-backends & # Compositor
 ~/.config/polybar/launch.sh & # Status bar
 xsetroot -cursor_name left_ptr & # X cursor fix
@@ -14,34 +18,9 @@ xss-lock -- betterlockscreen -l dim & # Lockscreen handler
 # java fix?
 wmname LG3D
 
-chrome=Chrome
-code=Code
-terminal=Terminal
-chat=Chat
-git=Git
-mail=Mail
-spotify=Spotify
-other1=8
-other2=9
-other3=10
+source ./variables
 
-COUNT=$(bspc query -M | wc -l);
-CONNECTED=$(xrandr | grep " connected " | awk '{ print$1 }');
-INDEX=0
-for MONITOR in $CONNECTED
-do
-	if [ $COUNT -eq "2" ]; then
-		if [ $INDEX -eq 0 ]; then
-			bspc monitor $( bspc query -M --names | grep -v $MONITOR ) -d $chrome $code $terminal $git $spotify $other1 $other2 $other3
-		else
-			bspc monitor $( bspc query -M --names | grep -v $MONITOR ) -d $chat $mail
-		fi
-	else
-		bspc monitor -d $chrome $code $terminal $chat $git $mail $spotify $other1 $other2 $other3
-	fi
-	INDEX=$(( INDEX + 1 ))
-done
-
+./workspaces &
 
 #borders 
 bspc config border_width         3
@@ -60,20 +39,12 @@ bspc config remove_unplugged_monitors true
 
 # bspc config single_monocle	 true
 
-bspc rule -a Google-chrome desktop='Chrome'
-bspc rule -a code-oss desktop='Code'
-bspc rule -a Franz desktop='Chat'
-bspc rule -a discord desktop='Chat'
-bspc rule -a Mailspring desktop="Mail"
-bspc rule -a Spotify desktop='Spotify'
-
-# Autorandr workspace management
-bspc subscribe monitor | while read -r line; do
-	case $line in
-			monitor_add*|monitor_remove*)
-					killall bspc && sleep 1 && bspc wm -r
-	esac
-done &
+bspc rule -a Google-chrome desktop=$chrome
+bspc rule -a Code desktop=$code
+bspc rule -a Ferdi desktop=$chat
+bspc rule -a discord desktop=$chat
+bspc rule -a Mailspring desktop=$mail
+bspc rule -a Spotify desktop=$spotify
 
 startup_lock_file=/tmp/bspwm-startup.lock
 if [ ! -f $startup_lock_file ]; then

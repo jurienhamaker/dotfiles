@@ -8,10 +8,10 @@ INDEX=0
 for MONITOR in $CONNECTED
 do
         if [ $COUNT -eq "2" ]; then
-                if [ $INDEX -eq 0 ]; then
-                        bspc monitor $( bspc query -M --names | grep -v $MONITOR ) -d $chrome $code $terminal $git $spotify
+                if [ $INDEX -eq 1 ]; then
+                        bspc monitor $MONITOR -d $chrome $code $terminal $git $spotify
                 else
-                        bspc monitor $( bspc query -M --names | grep -v $MONITOR ) -d $chat $mail
+                        bspc monitor $MONITOR -d $chat $mail
                 fi
         else
                 bspc monitor -d $chrome $code $terminal $chat $git $mail $spotify $other1 $other2 $other3

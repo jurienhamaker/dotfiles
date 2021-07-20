@@ -1,6 +1,6 @@
 #! /bin/bash
 
-source ./variables
+source ~/.config/bspwm/variables
 
 COUNT=$(bspc query -M | wc -l);
 CONNECTED=$(xrandr | grep " connected " | awk '{ print$1 }');

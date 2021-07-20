@@ -1,6 +1,6 @@
+/** Basic config file **/
+
 configuration {
-modi: "window,run,ssh,drun";
-lines: 10;
-font: "Cascadia Code 12";
+  show-icons:         true;
+  icon-theme:         "Papirus";
 }
-@import "~/.config/rofi/slate.rasi"

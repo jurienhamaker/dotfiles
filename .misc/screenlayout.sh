@@ -4,17 +4,17 @@
 #xrandr --auto
 
 #Nvidia settings
-xrandr --setprovideroutputsource modesetting NVIDIA-0
+#xrandr --setprovideroutputsource modesetting NVIDIA-0
 
-xrandr --dpi 152
-xrandr --auto 
+#xrandr --dpi 152
+#xrandr --auto 
 
 # $MONITOR & $LAPTOP are found in /etc/environment
 
 #AVAILABLE=$(xrandr --listmonitors | awk '{ print$4 }');
 CONNECTED=$(xrandr | grep " connected " | awk '{ print$1 }');
-RESOLUTION=3840x2160
-OFFSET=3840
+RESOLUTION=2560x1440
+OFFSET=2560
 
 #echo $LAPTOP_MONITOR $EXTERNAL_MONITOR
 #echo $AVAILABLE

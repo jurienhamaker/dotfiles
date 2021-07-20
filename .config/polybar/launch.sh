@@ -1,17 +1,84 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-## Add this to your wm startup file.
+dir="$HOME/.config/polybar"
+themes=(`ls --hide="launch.sh" $dir`)
 
-# Terminate already running bar instances
-killall -q polybar
 
-# Wait until the processes have been shut down
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+launch_bar() {
+	# Terminate already running bar instances
+	killall -q polybar
 
-# Launch bar1 and bar2
-CONNECTED=$(xrandr -q | grep " connected" | cut -d ' ' -f1);
+	# Wait until the processes have been shut down
+	while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-for m in $CONNECTED
-do
-	MONITOR=$m polybar -c ~/.config/polybar/config.ini main &
-done
+	# Reload fc cache for icons
+	fc-cache -fv
+
+	# Launch the bar
+	if [[ "$style" == "hack" || "$style" == "cuts" ]]; then
+		polybar -q top -c "$dir/$style/config.ini" &
+		polybar -q bottom -c "$dir/$style/config.ini" &
+	elif [[ "$style" == "pwidgets" ]]; then
+		bash "$dir"/pwidgets/launch.sh --main
+	else
+		CONNECTED=$(xrandr -q | grep " connected" | cut -d ' ' -f1);
+		for m in $CONNECTED
+		do
+			MONITOR=$m polybar -q main -c "$dir/$style/config.ini" &	
+		done
+	fi
+}
+
+style="colorblocks"
+launch_bar
+
+# if [[ "$1" == "--material" ]]; then
+# 	style="material"
+# 	launch_bar
+
+# elif [[ "$1" == "--shades" ]]; then
+# 	style="shades"
+# 	launch_bar
+
+# elif [[ "$1" == "--hack" ]]; then
+# 	style="hack"
+# 	launch_bar
+
+# elif [[ "$1" == "--docky" ]]; then
+# 	style="docky"
+# 	launch_bar
+
+# elif [[ "$1" == "--cuts" ]]; then
+# 	style="cuts"
+# 	launch_bar
+
+# elif [[ "$1" == "--shapes" ]]; then
+# 	style="shapes"
+# 	launch_bar
+
+# elif [[ "$1" == "--grayblocks" ]]; then
+# 	style="grayblocks"
+# 	launch_bar
+
+# elif [[ "$1" == "--blocks" ]]; then
+# 	style="blocks"
+# 	launch_bar
+
+# elif [[ "$1" == "--colorblocks" ]]; then
+# 	style="colorblocks"
+# 	launch_bar
+
+# elif [[ "$1" == "--forest" ]]; then
+# 	style="forest"
+# 	launch_bar
+
+# else
+# 	cat <<- EOF
+# 	Usage : launch.sh --theme
+		
+# 	Available Themes :
+# 	--blocks    --colorblocks    --cuts      --docky
+# 	--forest    --grayblocks     --hack      --material
+# 	--shades    --shapes
+# 	EOF
+# fi

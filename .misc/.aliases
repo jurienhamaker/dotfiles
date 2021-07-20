@@ -17,7 +17,7 @@ alias rl="~/RuneLite.appimage"
 alias lock="betterlockscreen -l dim"
 alias logout="rm -rf /tmp/bspwm-startup.lock; bspc quit"
 
-
+alias update_mirrors="sudo reflector --save /etc/pacman.d/mirrorlist --country Netherlands --protocol https --latest 5"
 alias screenshot="scrot -s /tmp/ss.png && xclip -selection clipboard -t image/png -i /tmp/ss.png && rm /tmp/ss.png"
 
 find-rename-regex() (

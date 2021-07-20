@@ -2,45 +2,41 @@
 ! Display configuration
 ! ------------------------------------------------------------------------------
 
-Xft.dpi:		152
-
 
 
 ! special
-*.foreground:   #FFFFFA
-*.background:   #1E1F1F
-*.cursorColor:  #FFFFFA
+*.foreground:   #c5c8c6
+*.background:   #263238
+*.cursorColor:  #c5c8c6
 
 ! black
-*.color0:       #1E1F1F
-*.color8:       #444545
+*.color0:       #4a4a4a
+*.color8:       #969896
 
 ! red
-*.color1:       #C70039
-*.color9:       #900C3F
+*.color1:       #cc6666
+*.color9:       #cc6666
 
 ! green
-*.color2:       #61988E
-*.color10:      #507C74
+*.color2:       #b5bd68
+*.color10:      #b5bd68
 
 ! yellow
-*.color3:       #F7AE50
-*.color11:      #F9C784
+*.color3:       #f0c674
+*.color11:      #f0c674
 
 ! blue
-*.color4:       #7C76D0
-*.color12:      #9893DA
+*.color4:       #81a2be
+*.color12:      #81a2be
 
 ! magenta
-*.color5:       #6A4587
-*.color13:      #7E52A0
+*.color5:       #b294bb
+*.color13:      #b294bb
 
 ! cyan
-*.color6:       #8BEAF9
-*.color14:      #C4F5FC
+*.color6:       #8abeb7
+*.color14:      #8abeb7
 
 ! white
-*.color7:       #F4EDEA
-*.color15:      #FFFFFA
-
-
+*.color7:       #c5c8c6
+*.color15:      #ffffff

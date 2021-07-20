@@ -1,13 +1,15 @@
 #! /bin/bash
 
 # Fix for autorandr profile switching at boot
-autorandr -c $(autorandr | grep "(detected)" | sed "s/ (detected)//")
+#autorandr -c $(autorandr | grep "(detected)" | sed "s/ (detected)//")
 
 # Nvidia
-xrandr --setprovideroutputsource modesetting NVIDIA-0
-xrandr --auto
+#xrandr --setprovideroutputsource modesetting NVIDIA-0
+#xrandr --auto
 
-picom --experimental-backends & # Compositor
+~/.screenlayout/screenlayout.sh
+
+picom & # Compositor
 ~/.config/polybar/launch.sh & # Status bar
 xsetroot -cursor_name left_ptr & # X cursor fix
 dunst & # Notifications
@@ -16,16 +18,17 @@ sxhkd & # Keyboard shortcuts
 xss-lock -- betterlockscreen -l dim & # Lockscreen handler
 
 # java fix?
-wmname LG3D
+#wmname LG3D
 
-source ./variables
+source ~/.config/bspwm/variables
 
-./workspaces &
+#~/.screenlayout/screenlayout.sh
+~/.config/bspwm/workspaces
 
 #borders 
-bspc config border_width         3
-bspc config normal_border_color	 '#444545'
-bspc config focused_border_color '#C70039'
+bspc config border_width         0
+#bspc config normal_border_color	 '#4A4A4A'
+#bspc config focused_border_color '#676767'
 
 bspc config window_gap           16
 
@@ -42,9 +45,11 @@ bspc config remove_unplugged_monitors true
 bspc rule -a Google-chrome desktop=$chrome
 bspc rule -a Code desktop=$code
 bspc rule -a Ferdi desktop=$chat
+bspc rule -a gitkraken desktop=$git
 bspc rule -a discord desktop=$chat
 bspc rule -a Mailspring desktop=$mail
 bspc rule -a Spotify desktop=$spotify
+bspc rule -a QuickSynergy desktop=$other3
 
 startup_lock_file=/tmp/bspwm-startup.lock
 if [ ! -f $startup_lock_file ]; then

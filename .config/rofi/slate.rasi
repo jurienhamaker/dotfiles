@@ -1,13 +1,25 @@
 * {
-  background-color: #1E1F1F;
-  border-color: #2e343f;
-  text-color: #ffffff;
+    background:                     #263238;
+    background-alt:                 #222d32;
+    foreground:                     #c5c8c6;
+    border:               			#cc6666;
+    border-alt:               		#cc6666;
+    selected:               		#cc6666;
+    urgent:                         #cc6666;
+}
+
+
+* {
+  background-color: #263238;
+  border-color: #222d32;
+  text-color: #c5c8c6;
   spacing: 0;
   width: 512px;
 }
 
 inputbar {
   border: 0 0 1px 0;
+  border-color: #c5c8c6;
   children: [prompt,entry];
 }
 
@@ -17,9 +29,9 @@ prompt {
 }
 
 textbox {
-  background-color: #2e343f;
+  background-color: #263238;
   border: 0 0 1px 0;
-  border-color: #282C33;
+  border-color: #cc6666;
   padding: 8px 16px;
 }
 
@@ -39,6 +51,6 @@ element {
 }
 
 element selected {
-  background-color: #C70039;
+  background-color: #cc6666;
   text-color: white;
 }

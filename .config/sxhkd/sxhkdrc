@@ -3,11 +3,11 @@
 
 # terminal emulator
 super + Return
-	termite
+	alacritty
 
 # program launcher
 super + d
-	rofi -show drun --config ~/.config/rofi/config.rasi
+	~/.config/rofi/show-launcher
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -122,7 +122,7 @@ super + alt + {Left,Down,Up,Right}
 
 # Lock screenshot
 super + x
-	~/.config/polybar/scripts/powermenu
+	~/.config/rofi/show-powermenu
 
 ################################################
 #               MEDIA KEYS                     #
@@ -162,7 +162,7 @@ XF86MonBrightnessDown
 
 # Take a screenshot
 Print
-	imgur-screenshot
+	imgur-screenshot -o false
 
 shift + Print
-	imgur-screenshot -f
+	imgur-screenshot -f -o false

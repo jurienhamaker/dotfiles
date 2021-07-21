@@ -9,12 +9,12 @@ for MONITOR in $CONNECTED
 do
         if [ $COUNT -eq "2" ]; then
                 if [ $INDEX -eq 1 ]; then
-                        bspc monitor $MONITOR -d $chrome $code $terminal $git $spotify
+                        bspc monitor $MONITOR -d $home $chrome $code $terminal $git $spotify
                 else
                         bspc monitor $MONITOR -d $chat $mail
                 fi
         else
-                bspc monitor -d $chrome $code $terminal $chat $git $mail $spotify $other1 $other2 $other3
+                bspc monitor -d $home $chrome $code $terminal $chat $git $mail $spotify $other1 $other2
         fi
         INDEX=$(( INDEX + 1 ))
 done

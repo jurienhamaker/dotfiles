@@ -1,4 +1,5 @@
 IP=$(ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p' | tail -1)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # Do not run these when home
 if [[ $IP != "192.168.68"* ]]; then
@@ -7,9 +8,10 @@ if [[ $IP != "192.168.68"* ]]; then
 	discord &
 	ferdi &
 else
-	bspc desktop --focus 10 && quicksynergy &
+	synergyc --name Work 192.168.68.106
 fi
 
+gitkraken &
 code &
 
-#bspc desktop --focus Git && gitkraken &
+$SCRIPT_DIR/eww/launch

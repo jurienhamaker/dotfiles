@@ -11,9 +11,9 @@ launch_bar() {
 	# Wait until the processes have been shut down
 	while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-	# Reload fc cache for icons
-	fc-cache -fv
-
+	# Load fc-cache
+	fc-cache 
+	
 	# Launch the bar
 	if [[ "$style" == "hack" || "$style" == "cuts" ]]; then
 		polybar -q top -c "$dir/$style/config.ini" &

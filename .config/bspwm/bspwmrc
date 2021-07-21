@@ -45,11 +45,23 @@ bspc config remove_unplugged_monitors true
 bspc rule -a Google-chrome desktop=$chrome
 bspc rule -a Code desktop=$code
 bspc rule -a Ferdi desktop=$chat
-bspc rule -a gitkraken desktop=$git
+bspc rule -a '*:gitkraken' desktop=$git follow=off
 bspc rule -a discord desktop=$chat
 bspc rule -a Mailspring desktop=$mail
-bspc rule -a Spotify desktop=$spotify
-bspc rule -a QuickSynergy desktop=$other3
+bspc rule -a QuickSynergy desktop=$other2
+
+
+bspc rule -a eww-profile desktop=$home state=floating
+bspc rule -a eww-system desktop=$home state=floating
+bspc rule -a eww-clock desktop=$home state=floating
+bspc rule -a eww-uptime desktop=$home state=floating
+bspc rule -a eww-music desktop=$home state=floating
+bspc rule -a eww-weather desktop=$home state=floating
+bspc rule -a eww-mail desktop=$home state=floating
+bspc rule -a eww-logout desktop=$home state=floating
+bspc rule -a eww-sleep desktop=$home state=floating
+bspc rule -a eww-reboot desktop=$home state=floating
+bspc rule -a eww-poweroff desktop=$home state=floating
 
 startup_lock_file=/tmp/bspwm-startup.lock
 if [ ! -f $startup_lock_file ]; then

@@ -107,11 +107,11 @@ element normal.urgent {
     text-color:       				@red;
 }
 element normal.active {
-    background-color: 				@background-alt;
-    text-color:       				@fg;
+    background-color: 				@green;
+    text-color:       				@background;
 }
 element selected.normal {
-    background-color: 				@fg;
+    background-color: 				@cyan;
     text-color:       				@bg;
 }
 element selected.urgent {
@@ -119,7 +119,7 @@ element selected.urgent {
     text-color:       				@red;
 }
 element selected.active {
-    background-color: 				@fg;
+    background-color: 				@cyan;
     text-color:       				@bg;
 }
 element alternate.normal {
@@ -142,18 +142,18 @@ sidebar {
 }
 
 button {
-    background-color:             	@fg;
+    background-color:             	@background-alt;
     margin: 						5px;
     padding: 						5px;
-    text-color: 					@bg;
+    text-color: 					@fg;
     border: 						0px;
     border-radius: 					1px;
     border-color: 					@fg;
 }
 
 button selected {
-    background-color:             	@ac;
-    text-color: 					@fg;
+    background-color:             	@cyan;
+    text-color: 					@bg;
     border: 						0px;
     border-radius: 					1px;
     border-color: 					@fg;

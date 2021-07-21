@@ -1,22 +1,23 @@
 * {
-    background:                     #263238;
-    background-alt:                 #222d32;
-    foreground:                     #c5c8c6;
-    border:               			#222d32;
-    border-alt:               		#222d32;
-    selected:               		#cc6666;
-    urgent:                         #cc6666;
+    background:                     #1d212a;
+    background-alt:                 #585e74;
+    foreground:                     #e3e3e3;
+    border:               			#585e74;
+    border-alt:               		#585e74;
+    selected:               		#81d4ee;
+    urgent:                         #fc8993;
 
 
-    al:                             #263238;
-    bg:                             #263238;
-    se:                             #CC6666;
-    fg:                             #C5C8C6;
-    ac:                             #CC6666;
-    red:                            #CC6666;
-    green:                          #B5BD68;
-    yellow:                         #F0C674;
-    blue:                           #81A2BE;
-    purple:                         #B294BB;
-    cyan:                           #8ABEB7;
+    al:                             #1d212a;
+    bg:                             #1d212a;
+    se:                             #81d4ee;
+    fg:                             #e3e3e3;
+    ac:                             #81d4ee;
+
+    red:                            #fc8993;
+    green:                          #89e19c;
+    yellow:                         #fbdf90;
+    blue:                           #a7bdfb;
+    purple:                         #d990cd;
+    cyan:                           #81d4ee;
 }

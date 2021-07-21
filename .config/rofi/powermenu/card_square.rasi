@@ -36,25 +36,25 @@ prompt {
     enabled: 						true;
     padding:                        7px 7px 7px 0%;
 	background-color: 				@background-alt;
-	text-color: 					@foreground;
+	text-color: 					@yellow;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
 	str: 							"System |";
 	background-color: 				@background-alt;
-	text-color: 					@foreground;
+	text-color: 					@yellow;
     padding:                        7px 7px 7px 0%;
 }
 
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt ];
     background-color:               @background-alt;
-    text-color:                     @foreground;
+    text-color:                     @yellow;
     expand:                         false;
     border:                  		0 0 0 2px;
     border-radius:                  0;
-    border-color:                  	@border;
+    border-color:                  	@background-alt;
     margin:                         0 24px 0 0;
     padding:                        8px;
     position:                       center;
@@ -104,7 +104,7 @@ element alternate.active {
 }
 
 element selected {
-    background-color:               @foreground;
+    background-color:               @cyan;
     text-color:                     @background;
     border-radius:                  0%;
     border-color:                  	@border;
@@ -116,6 +116,6 @@ element selected.urgent {
 }
 
 element selected.active {
-    background-color:               @background-alt;
-    color:                          @foreground;
+    background-color:               @cyan;
+    color:                          @background;
 }

@@ -1,5 +1,6 @@
 #! /bin/bash
 
+home=Home
 chrome=Chrome
 code=Code
 terminal=Terminal
@@ -7,6 +8,5 @@ chat=Chat
 git=Git
 mail=Mail
 spotify=Spotify
-other1=8
-other2=9
-other3=10
+other1=9
+other2=10

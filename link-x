@@ -1,0 +1,11 @@
+#!/bin/bash
+
+BASE_DESTINATION=${2:-$HOME}
+SOURCE="$PWD/$1"
+DESTINATION="$BASE_DESTINATION/$1"
+
+rm -rf $DESTINATION
+ln -s $SOURCE $DESTINATION
+
+echo "Linked $1 to $DESTINATION:"
+ls -la $BASE_DESTINATION | grep $1

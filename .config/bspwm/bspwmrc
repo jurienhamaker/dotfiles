@@ -18,7 +18,7 @@ sxhkd & # Keyboard shortcuts
 xss-lock -- betterlockscreen -l dim & # Lockscreen handler
 
 # java fix?
-#wmname LG3D
+wmname LG3D
 
 source ~/.config/bspwm/variables
 
@@ -42,7 +42,7 @@ bspc config remove_unplugged_monitors true
 
 # bspc config single_monocle	 true
 
-bspc rule -a Google-chrome desktop=$chrome
+bspc rule -a Firefox desktop=$firefox
 bspc rule -a Code desktop=$code
 bspc rule -a Ferdi desktop=$chat
 bspc rule -a '*:gitkraken' desktop=$git follow=off

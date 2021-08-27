@@ -2,11 +2,11 @@
 
 ## Files and cmd
 FILE="$HOME/.cache/eww_launch.xyz"
-EWW="eww"
+EWW="/usr/bin/eww"
 
 ## Run eww daemon if not running already
 if [[ ! `pidof eww` ]]; then
-	${EWW} daemon &
+	${EWW} daemon
 	sleep 1
 fi
 

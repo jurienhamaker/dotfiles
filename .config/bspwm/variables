@@ -1,7 +1,7 @@
 #! /bin/bash
 
 home=Home
-chrome=Chrome
+firefox=Firefox
 code=Code
 terminal=Terminal
 chat=Chat

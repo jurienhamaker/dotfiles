@@ -3,7 +3,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # Do not run these when home
 if [[ $IP != "192.168.68"* ]]; then
-	google-chrome-stable &
+	firefox &
 	mailspring &
 	discord &
 	ferdi &

@@ -24,7 +24,7 @@ launch_bar() {
 		CONNECTED=$(xrandr -q | grep " connected" | cut -d ' ' -f1);
 		for m in $CONNECTED
 		do
-			MONITOR=$m polybar -q main -c "$dir/$style/config.ini" &	
+			MONITOR=$m polybar -q main -c "$dir/$style/config.ini" &
 		done
 	fi
 }

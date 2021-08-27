@@ -32,7 +32,7 @@
     max_icon_size= 80
     sticky_history = no
     history_length = 6
-    browser = google-chrome-stable
+    browser = firefox
     always_run_script = true
     title = Dunst
     class = Dunst

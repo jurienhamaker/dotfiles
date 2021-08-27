@@ -20,7 +20,7 @@ OFFSET=2560
 #echo $AVAILABLE
 
 #CONNECTED="eDP-1-1 DP-1-2"
-
+echo $CONNECTED
 INIT="xrandr"
 INDEX=0
 for MONITOR in $CONNECTED
@@ -34,6 +34,7 @@ do
 	INDEX=$(( INDEX + 1 ))
 done
 
+echo $INIT
 $($INIT)
 #if [[ $CONNECTED == *"$LAPTOP_MONITOR"* ]]; then
 #	echo "$LAPTOP_MONITOR Connected"

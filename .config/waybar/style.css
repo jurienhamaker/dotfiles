@@ -1,0 +1,224 @@
+/* =============================================================================
+ *
+ * Waybar configuration
+ *
+ * Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+ *
+ * =========================================================================== */
+
+/* -----------------------------------------------------------------------------
+ * Keyframes
+ * -------------------------------------------------------------------------- */
+/*
+Arc-Dark Color Scheme
+*/
+
+@define-color highlight		#5294e2;
+@define-color bg        	#1d212a;
+@define-color fg        	#e3e3e3;
+
+@define-color red1			#fc8993;
+@define-color red2			#fb9199;
+
+@define-color green1		#89e19c;
+@define-color green2		#8de19f;
+
+@define-color yellow1		#fbdf90;
+@define-color yellow2		#ffe28e;
+
+@define-color blue1			#a7bdfb;
+@define-color blue2			#afc3fb;
+
+@define-color magenta1		#d990cd;
+@define-color magenta2		#df95d3;
+
+@define-color cyan1			#81d4ee;
+@define-color cyan2			#81d4ee;
+
+@keyframes blink-warning {
+  70% {
+    color: @fg;
+  }
+
+  to {
+    color: @orange1;
+  }
+}
+
+@keyframes blink-critical {
+  70% {
+    color: @fg;
+  }
+
+  to {
+    color: @red1;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Base styles
+ * -------------------------------------------------------------------------- */
+
+/* Reset all styles */
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* The whole bar */
+#waybar {
+  background: transparent;
+  color: #bebebe;
+  /* background-color: @bg; */
+  font-family: Roboto, "Font Awesome 5 Free", "Font Awesome 5 Brands", Helvetica,
+    Arial, sans-serif;
+  font-size: 10px;
+}
+
+/* Each module */
+#battery,
+#clock,
+#backlight,
+#cpu,
+#custom-keyboard-layout,
+#memory,
+#mode,
+#custom-weather,
+#network,
+#pulseaudio,
+#temperature,
+#tray,
+#idle_inhibitor,
+#custom-PBPbattery,
+#custom-power,
+#custom-sep {
+  background-color: @bg;
+  padding: 0 1rem;
+}
+
+/* -----------------------------------------------------------------------------
+ * Module styles
+ * -------------------------------------------------------------------------- */
+
+#cpu {
+  color: @green1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#cpu.warning {
+  color: @yellow1;
+  animation-name: blink-warning;
+  animation-duration: 1s;
+}
+
+#cpu.critical {
+  color: @red2;
+  animation-name: blink-critical;
+  animation-duration: 0.2s;
+}
+
+#memory {
+  color: @green1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#memory.warning {
+  color: @yellow1;
+  animation-name: blink-warning;
+  animation-duration: 1s;
+}
+
+#memory.critical {
+  color: @red2;
+  animation-name: blink-critical;
+  animation-duration: 0.2s;
+}
+
+#pulseaudio {
+  color: @blue1;
+}
+
+#pulseaudio.muted {
+  color: @highlight;
+}
+
+#battery {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: @green1;
+}
+
+#battery.warning {
+  color: @yellow1;
+}
+
+#battery.critical {
+  color: @red2;
+}
+
+#battery.warning.discharging {
+  animation-name: blink-warning;
+  animation-duration: 1s;
+}
+
+#battery.critical.discharging {
+  animation-name: blink-critical;
+  animation-duration: 0.2s;
+}
+
+#backlight {
+  color: @yellow2;
+}
+
+#network {
+  color: @magenta1;
+}
+
+#network.disconnected {
+  color: @orange1;
+}
+
+#workspaces {
+  font-size: 13px;
+}
+
+#workspaces button {
+  background: @bg;
+  margin: 0;
+  padding: 0 9px;
+  font-size: 8px;
+}
+
+#workspaces button.focused {
+  background: @highlight;
+  color: @bg;
+}
+
+#workspaces button.urgent {
+  border-color: #c9545d;
+  color: #c9545d;
+}
+
+#custom-power {
+  margin-left: 15px;
+  font-size: 15px;
+  padding: 0 12.5px;
+  color: @red1;
+}
+
+#custom-sep {
+  font-size: 12px;
+  padding: 0;
+}
+
+#custom-weather {
+  color: @cyan1;
+}

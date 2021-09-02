@@ -3,8 +3,11 @@ alias polybar="~/.config/polybar/launch.sh"
 
 alias p="cd /mnt/Programming"
 
-alias e_up="p; cd employes; docker-compose up"
+alias e_up="p; cd employes; docker-compose up app"
 alias e_bash="p; cd employes; docker-compose exec app bash"
+alias eo_up="p; cd employes; docker-compose up office"
+alias eo_up="p; cd employes; docker-compose exec office bash"
+
 alias es_up="p; cd employes-style; docker-compose up"
 alias es_bash="p; cd employes-style; docker-compose exec style bash"
 alias p_up="p; cd paperless; docker-compose up storybook"

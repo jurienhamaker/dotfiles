@@ -23,6 +23,7 @@ compinit
 
 antibody bundle < ~/.config/antibody/zsh_plugins.txt
 
+export PATH="~/.bin:$PATH"
 source ~/.aliases
 source ~/.env
 

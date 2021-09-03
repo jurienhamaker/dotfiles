@@ -21,3 +21,5 @@ exec_always {
 
 
 
+# Mouse following
+focus_follows_mouse no

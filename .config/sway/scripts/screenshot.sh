@@ -1,9 +1,13 @@
 #!/bin/bash
  
-entries="Active Screen Output Area Window"
+# entries="Active Screen Output Area Window"
  
-selected=$(printf '%s\n' $entries | wofi --style=$HOME/.config/wofi/style.widgets.css --conf=$HOME/.config/wofi/config.screenshot | awk '{print tolower($1)}')
+# selected=$(printf '%s\n' $entries | wofi --style=$HOME/.config/wofi/style.widgets.css --conf=$HOME/.config/wofi/config.screenshot | awk '{print tolower($1)}')
  
+
+
+selected=$1
+
 case $selected in
   active)
     /usr/share/sway/scripts/grimshot --notify save active;;

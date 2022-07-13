@@ -11,25 +11,30 @@
 #   input "1386:884:Wacom_Intuos_S_Pen" map_to_output HDMI-A-1
 
 
-set $output-primary DP-1
+set $output-usbc DP-1
 set $output-secondary eDP-1
+set $output-hdmi DP-2
 
 # Workspaces
-workspace 1 output $output-primary
-workspace 2 output $output-primary
-workspace 3 output $output-primary
-workspace 5 output $output-primary
-workspace 7 output $output-primary
-workspace 8 output $output-primary
-workspace 9 output $output-primary
-workspace 10 output $output-primary
+workspace 1 output $output-usbc $output-hdmi
+workspace 2 output $output-usbc $output-hdmi
+workspace 3 output $output-usbc $output-hdmi
+workspace 5 output $output-usbc $output-hdmi
+workspace 7 output $output-usbc $output-hdmi
+workspace 8 output $output-usbc $output-hdmi
+workspace 9 output $output-usbc $output-hdmi
+workspace 10 output $output-usbc $output-hdmi
 
 workspace 4 output $output-secondary
 workspace 6 output $output-secondary
 
 # Positions
-output $output-secondary pos 0 0
-output $output-primary pos 1920 0
+#output $output-secondary pos 0 0
+output $output-secondary pos 1920 0
+output $output-usbc pos 1920 0
+#output $output-hdmi pos 1920 0
+output $output-hdmi pos 0 0
 
 # Scaling
-output $output-primary scale 1.5
+output $output-usbc scale 1.5
+#output $output-hdmi scale 1.5

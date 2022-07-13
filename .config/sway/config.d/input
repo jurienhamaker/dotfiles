@@ -23,3 +23,8 @@ exec_always {
 
 # Mouse following
 focus_follows_mouse no
+
+input "1133:16511:Logitech_G502" {
+    accel_profile flat
+    pointer_accel -0.6
+}

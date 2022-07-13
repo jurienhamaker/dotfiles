@@ -5,7 +5,7 @@ echo $IP;
 
 # Do not run these when home
 if [[ $IP != "192.168.68"* ]]; then
-	firefox &
+	google-chrome-stable &
 	mailspring &
 	discord &
 	ferdi &

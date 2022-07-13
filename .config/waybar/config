@@ -4,7 +4,7 @@
 	"position": "top",
 	// If height property would be not present, it'd be calculated dynamically
 	"height": 36,
-	"width": 10,
+	//"width": 1920,
 	"margin": "10px 10px 0 10px",
 	"modules-left": [
 		"sway/workspaces",
@@ -135,7 +135,7 @@
 		"format": "  {icon}  ",
 		//"format":"{icon}",
 		"format-icons": {
-			"1": "",
+			"1": "",
 			"2": "",
 			"3": "",
 			"4": "",

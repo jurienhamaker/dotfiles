@@ -1,9 +1,10 @@
 # Assign workspaces
 assign [app_id="firefox"] 1
+assign [class="Google-chrome"] 1
 
-assign [class="code-oss"] 2
+assign [class="Code"] 2
 
-assign [instance="ferdi"] 4
+assign [instance="ferdium"] 4
 assign [class="discord"] 4
 
 assign [instance="gitkraken"] 5
@@ -51,4 +52,4 @@ for_window [app_id="firefox" title="Firefox — Sharing Indicator"] kill
 
 # Inhibit idle
 for_window [app_id="firefox"] inhibit_idle fullscreen
-for_window [app_id="Chromium"] inhibit_idle fullscreen
+for_window [class="Google-chrome"] inhibit_idle fullscreen

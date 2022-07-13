@@ -36,23 +36,23 @@ Arc-Dark Color Scheme
 @define-color cyan2			#81d4ee;
 
 @keyframes blink-warning {
-  70% {
-    color: @fg;
-  }
+	70% {
+		color: @fg;
+	}
 
-  to {
-    color: @orange1;
-  }
+	to {
+		color: @orange1;
+	}
 }
 
 @keyframes blink-critical {
-  70% {
-    color: @fg;
-  }
+	70% {
+		color: @fg;
+	}
 
-  to {
-    color: @red1;
-  }
+	to {
+		color: @red1;
+	}
 }
 
 /* -----------------------------------------------------------------------------
@@ -61,21 +61,21 @@ Arc-Dark Color Scheme
 
 /* Reset all styles */
 * {
-  border: none;
-  border-radius: 0;
-  min-height: 0;
-  margin: 0;
-  padding: 0;
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /* The whole bar */
 #waybar {
-  background: transparent;
-  color: #bebebe;
-  /* background-color: @bg; */
-  font-family: Roboto, "Font Awesome 5 Free", "Font Awesome 5 Brands", Helvetica,
-    Arial, sans-serif;
-  font-size: 10px;
+	background: transparent;
+	color: #bebebe;
+	/* background-color: @bg; */
+	font-family: Roboto, 'Font Awesome 5 Free', 'Font Awesome 5 Brands',
+		Helvetica, Arial, sans-serif;
+	font-size: 12px;
 }
 
 /* Each module */
@@ -95,8 +95,8 @@ Arc-Dark Color Scheme
 #custom-PBPbattery,
 #custom-power,
 #custom-sep {
-  background-color: @bg;
-  padding: 0 1rem;
+	background-color: @bg;
+	padding: 0 1rem;
 }
 
 /* -----------------------------------------------------------------------------
@@ -104,121 +104,126 @@ Arc-Dark Color Scheme
  * -------------------------------------------------------------------------- */
 
 #cpu {
-  color: @green1;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+	color: @green1;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 #cpu.warning {
-  color: @yellow1;
-  animation-name: blink-warning;
-  animation-duration: 1s;
+	color: @yellow1;
+	animation-name: blink-warning;
+	animation-duration: 1s;
 }
 
 #cpu.critical {
-  color: @red2;
-  animation-name: blink-critical;
-  animation-duration: 0.2s;
+	color: @red2;
+	animation-name: blink-critical;
+	animation-duration: 0.2s;
 }
 
 #memory {
-  color: @green1;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+	color: @green1;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 #memory.warning {
-  color: @yellow1;
-  animation-name: blink-warning;
-  animation-duration: 1s;
+	color: @yellow1;
+	animation-name: blink-warning;
+	animation-duration: 1s;
 }
 
 #memory.critical {
-  color: @red2;
-  animation-name: blink-critical;
-  animation-duration: 0.2s;
+	color: @red2;
+	animation-name: blink-critical;
+	animation-duration: 0.2s;
 }
 
 #pulseaudio {
-  color: @blue1;
+	color: @blue1;
 }
 
 #pulseaudio.muted {
-  color: @highlight;
+	color: @highlight;
 }
 
 #battery {
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  color: @green1;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	color: @green1;
 }
 
 #battery.warning {
-  color: @yellow1;
+	color: @yellow1;
 }
 
 #battery.critical {
-  color: @red2;
+	color: @red2;
 }
 
 #battery.warning.discharging {
-  animation-name: blink-warning;
-  animation-duration: 1s;
+	animation-name: blink-warning;
+	animation-duration: 1s;
 }
 
 #battery.critical.discharging {
-  animation-name: blink-critical;
-  animation-duration: 0.2s;
+	animation-name: blink-critical;
+	animation-duration: 0.2s;
 }
 
 #backlight {
-  color: @yellow2;
+	color: @yellow2;
 }
 
 #network {
-  color: @magenta1;
+	color: @magenta1;
 }
 
 #network.disconnected {
-  color: @orange1;
+	color: @orange1;
 }
 
 #workspaces {
-  font-size: 13px;
+	font-size: 13px;
 }
 
 #workspaces button {
-  background: @bg;
-  margin: 0;
-  padding: 0 9px;
-  font-size: 8px;
+	background: @bg;
+	margin: 0;
+	padding: 0 0px;
+	font-size: 16px;
+}
+
+#workspaces button#sway-workspace-5 {
+	padding: 0 6px;
+	font-size: 12px;
 }
 
 #workspaces button.focused {
-  background: @highlight;
-  color: @bg;
+	background: @highlight;
+	color: @bg;
 }
 
 #workspaces button.urgent {
-  border-color: #c9545d;
-  color: #c9545d;
+	border-color: #c9545d;
+	color: #c9545d;
 }
 
 #custom-power {
-  margin-left: 15px;
-  font-size: 15px;
-  padding: 0 12.5px;
-  color: @red1;
+	margin-left: 15px;
+	font-size: 15px;
+	padding: 0 12.5px;
+	color: @red1;
 }
 
 #custom-sep {
-  font-size: 12px;
-  padding: 0;
+	font-size: 12px;
+	padding: 0;
 }
 
 #custom-weather {
-  color: @cyan1;
+	color: @cyan1;
 }

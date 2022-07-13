@@ -48,7 +48,8 @@ for_window [title="nmtui"] floating enable,  resize set width 50 ppt height 70 p
 for_window [title="htop"] floating enable, resize set width 50 ppt height 70 ppt
 for_window [app_id="xsensors"] floating enable
 for_window [title="Save File"] floating enable
-for_window [app_id="firefox" title="Firefox — Sharing Indicator"] kill
+for_window [title="Picture-in-picture"] floating enable, sticky enable
+for_window [class="firefox" title="Firefox — Sharing Indicator"] kill
 
 # Inhibit idle
 for_window [app_id="firefox"] inhibit_idle fullscreen

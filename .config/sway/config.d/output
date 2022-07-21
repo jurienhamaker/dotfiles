@@ -29,8 +29,8 @@ workspace 4 output $output-secondary
 workspace 6 output $output-secondary
 
 # Positions
-#output $output-secondary pos 0 0
-output $output-secondary pos 1920 0
+output $output-secondary pos 0 0
+#output $output-secondary pos 1920 0
 output $output-usbc pos 1920 0
 #output $output-hdmi pos 1920 0
 output $output-hdmi pos 0 0

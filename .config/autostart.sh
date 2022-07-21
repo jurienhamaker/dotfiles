@@ -10,7 +10,8 @@ if [[ $IP != "192.168.68"* ]]; then
 	discord &
 	ferdi &
 else
-	synergyc --name Work 192.168.68.106
+#	synergyc --name Work 192.168.68.106
+	waynergy --name Work -c 192.168.68.106
 fi
 
 gitkraken &

@@ -6,14 +6,12 @@ This repository contains my personal dotfiles.
 
 #### Setup
 
-- BSPWM and SXHKD configuration and keybindings
-- Polybar configuration and scripts
-- Rofi configuration and scripts
+- Sway configuration and keybindings
+- Waybar configuration and scripts
+- Wofi configuration and scripts
 - A custom .Xresources color palette
 - alacritty color scheme and configuration
 - zsh configuration and custom color scheme based on powerlevel10k
-- dunst notifications
-- picom configuration
 - Custom themes for different applications (Spotify, Discord, Telegram Desktop...)
 
 #### Screenshot

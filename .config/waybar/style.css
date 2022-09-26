@@ -187,18 +187,19 @@ Arc-Dark Color Scheme
 }
 
 #workspaces {
-	font-size: 13px;
+	font-size: 10px;
 }
 
 #workspaces button {
 	background: @bg;
 	margin: 0;
-	padding: 0 0px;
-	font-size: 16px;
+	padding: 0 6px 0 0;
+	font-size: 12px;
 }
 
 #workspaces button#sway-workspace-5 {
-	padding: 0 6px;
+	/* padding: 0; */
+	padding: 0 4px;
 	font-size: 12px;
 }
 

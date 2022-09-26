@@ -56,13 +56,13 @@
 		// "format-charging": "{icon} {capacity}%",
 		// "format-plugged": " {capacity}%",
 		// "format-good": "", // An empty format will hide the module
-		"format-full": " Full",
+		"format-full": "    Full",
 		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
+			"  ",
+			"  ",
+			"  ",
+			"  ",
+			"  "
 		]
 	},
 	"custom/PBPbattery": {
@@ -75,12 +75,12 @@
 	"clock": {
 		"interval": 10,
 		//"format-alt": "{:%e %b %Y}", // Icon: calendar-alt
-		"format": " {:%H:%M     %e %b %Y}",
+		"format": "  {:%H:%M       %e %b %Y}",
 		//"tooltip-format": "{:%e %B %Y}"
 	},
 	"cpu": {
 		"interval": 5,
-		"format": " {usage}%", // Icon: microchip
+		"format": "   {usage}%", // Icon: microchip
 		"states": {
 			"warning": 70,
 			"critical": 90,
@@ -99,7 +99,7 @@
 	},
 	"memory": {
 		"interval": 5,
-		"format": " {}%", // Icon: memory
+		"format": "   {}%", // Icon: memory
 		"on-click": "alacritty -e 'htop'",
 		"states": {
 			"warning": 70,
@@ -108,7 +108,7 @@
 	},
 	"network": {
 		"interval": 5,
-		"format-wifi": "  {essid}", // Icon: wifi
+		"format-wifi": "    {essid}", // Icon: wifi
 		"format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
 		"format-disconnected": "⚠  Disconnected",
 		"tooltip-format": "{ifname}: {ipaddr}",
@@ -156,14 +156,14 @@
 		"format-source": " {volume}%",
 		"format-source-muted": "",
 		"format-icons": {
-			"headphone": "",
-			"hands-free": "וֹ",
+			"headphone": " ",
+			"hands-free": "וֹ ",
 			"headset": "  ",
-			"phone": "",
-			"portable": "",
-			"car": "",
+			"phone": " ",
+			"portable": " ",
+			"car": " ",
 			"default": [
-				""
+				" "
 			]
 		},
 		"on-click": "pavucontrol",
@@ -184,7 +184,7 @@
 	"backlight#value": {
 		"format": "{icon} {percent}%",
 		"format-icons": [
-			""
+			"  "
 		],
 		"on-scroll-down": "brightnessctl -c backlight set +1%",
 		"on-scroll-up": "brightnessctl -c backlight set 1%-"

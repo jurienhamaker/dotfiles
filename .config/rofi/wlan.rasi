@@ -1,0 +1,46 @@
+configuration {
+    font: "SF Pro Text Bold 11";
+    me-select-entry: "MouseSecondary";
+    me-accept-entry: "MousePrimary";
+    hover-select: true;
+    location: 3;
+}
+window {
+    x-offset: -10px;
+    y-offset: 40px;
+    border-radius: 12px;
+}
+* {
+    background: #0a0a0a;
+    foreground: #b0b0b0;
+}
+entry {
+    padding: 12px 12px 0px 12px;
+}
+prompt, textbox-prompt-colon, case-indicator {
+    enabled: false;
+}
+mainbox, entry, listview, element {
+    background-color: @background;
+    text-color: @foreground;
+}
+listview {
+    padding: 12px;
+    spacing: 4px;
+    cycle: false;
+}
+element-text selected {
+    background-color: @foreground;
+    text-color: @background;
+    border-radius: 12px;
+}
+element-text {
+    padding: 6px 12px;
+    background-color: @background;
+    text-color: @foreground;
+}
+
+
+configuration {
+    font: "SF Mono Bold 11";
+}

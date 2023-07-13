@@ -1,0 +1,5 @@
+#!/bin/bash
+
+CONFIG="$HOME/.config/hypr/swaylock/config"
+
+swaylock --config ${CONFIG} & disown

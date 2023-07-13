@@ -1,0 +1,10 @@
+#!/bin/bash
+
+MODI="power-menu:$HOME/.config/rofi/scripts/rofi-power-menu"
+THEME="$HOME/.config/rofi/power-menu.rasi";
+
+if [[ $(pidof rofi) ]]; then
+	pkill rofi
+fi
+
+rofi -show power-menu -modi $MODI -theme $THEME

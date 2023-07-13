@@ -1,0 +1,10 @@
+#!/bin/bash
+
+THEME="$HOME/.config/rofi/apps.rasi";
+
+
+if [[ $(pidof rofi) ]]; then
+	pkill rofi
+fi
+
+rofi -no-lazy-grab -show drun -modi drun -theme $THEME

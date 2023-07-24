@@ -1,39 +1,29 @@
 {
-
-"include": "~/.config/hypr/waybar/modules",
-"layer": "top",
-//"mode": "dock",
-"exclusive": true,
-"passthrough": false,
-"position": "top",
-"spacing": 3,
-"fixed-center": true,
-"ipc": true,
-"margin-left": 10,
-"margin-right": 10,
-
-"modules-left": [
-	"wlr/workspaces", 
-	"cpu", 
-	"temperature", 
-	"memory",
-	//"disk", 
-	"custom/weather",
+	"include": "~/.config/hypr/waybar/modules",
+	"position": "top",
+	"layer": "top",
+	"height": 16,
+	"margin-top": 0,
+	"margin-bottom": 0,
+	"margin-left": 0,
+	"margin-right": 0,
+	"modules-left": [
+		"custom/launcher",
+		"wlr/workspaces",
+		"custom/weather",
+		"custom/playerctl",
+		"custom/playerlabel"
 	],
-  
-"modules-center": [
-	"clock"
-	], 
-
-"modules-right": [
-	"hyprland/window", 
-	"network",
-	"bluetooth",
-	"battery", 
-	"backlight",
-	"pulseaudio",
-	//"wireplumber", 
-	"pulseaudio#microphone", 
-	"custom/power",
+	"modules-center": [
+		"cpu",
+		"memory",
+		"disk"
 	],
+	"modules-right": [
+		null,
+		"custom/randwall",
+		"network",
+		"pulseaudio",
+		"clock"
+	]
 }
